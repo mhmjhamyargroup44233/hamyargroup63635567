@@ -1,15 +1,15 @@
 do
 
 function run(msg, matches)
-  return 'NOD32-BOT v8'.. VERSION .. [[ 
+  return 'HAMYARGROUP -----> 1'.. VERSION .. [[ 
  
-  Developer : @Behroozyaghi
+  توسع دهنده ربات: @Mhmafi--@ho3yyyn
   
-  Channel : @Nod32team
+  کانال پشتیبانی : @hamyargroupp
   
-  Open git : https://github.com/BH-YAGHI/NOD32-BOT.git
+  Open git : not open :)
   
-  NOD32 VERSION 8
+  HAMYARGROUP VERSION 1
   
   All rights reserved.
   __________________]]
