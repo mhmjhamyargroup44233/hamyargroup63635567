@@ -98,7 +98,7 @@ return {
   patterns = {"^!time (.*)$"}, 
   run = run
 }
---Copyright and edit; @behroozyaghi
---Persian Translate; @behroozyaghi
---ch : @nod32team
+--Copyright and edit; @mhmafi
+--Persian Translate; @Ho3yyyn
+--ch : @hamyargroupp
 --کپی بدون ذکر منبع حرام است
