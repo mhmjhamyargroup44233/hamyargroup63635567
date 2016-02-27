@@ -117,6 +117,8 @@ return {
     "koset(.*)",
     "شورت(.*)",
     "سگی(.*)",
+    "پدرسگ(.*)",
+    "مادر جنده(.*)",
     "کیری(.*)",
     "kiri(.*)",
     "دول(.*)",
@@ -128,6 +130,11 @@ return {
     "jaq(.*)"
     "jagh(.*)"
     "jaghi(.*)"
+    "shut up(.*)"
+    "Motherfucker(.*)"
+    "sisterfucker(.*)"
+    "Trollop(.*)"
+    "whore(.*)"
   },
   run = run
 }
