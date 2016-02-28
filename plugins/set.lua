@@ -13,7 +13,7 @@ local function save_value(msg, name, value)
 end
 local function run(msg, matches)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "⛔️شما مدیر نیستید"
   end
   local name = string.sub(matches[1], 1, 50)
   local value = string.sub(matches[2], 1, 1000)
@@ -30,7 +30,7 @@ return {
   run = run 
 }
 
---Copyright and edit; @behroozyaghi
---Persian Translate; @behroozyaghi
---ch : @nod32team
---کپی بدون ذکر منبع حرام است
+--Copyright and edit; @Mhmafi
+--Persian Translate; @Ho3yyyn
+--ch : @HamyarGroup
+--همیار گروه
