@@ -22,5 +22,5 @@ return {
 end
 --Copyright and edit; @Mhmafi
 --Persian Translate; @Ho3yyyn
---ch : @HamyarGroup
+--ch : @HamyarGroupp
 --همیار گروه
