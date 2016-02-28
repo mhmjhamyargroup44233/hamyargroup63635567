@@ -237,6 +237,7 @@ return {
 	"kos khol(.*)"
 	"kosmikh(.*)"
 	"kos mikh(.*)"
+	
   },
   run = run
 }
