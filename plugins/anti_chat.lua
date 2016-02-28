@@ -12,7 +12,8 @@ local function run(msg, matches)
       if antichat[msg.from.id] == true then 
         return
       end
-      send_large_msg("chat#id".. msg.to.id , "chat is not allowed here")
+      send_large_msg("chat#id".. msg.to.id , "📛شما اخراج شدید
+⚠️از فرستادن هر گونه پیام خودداری نمایید چت به  دست ادمین قفل است")
       local name = user_print_name(msg.from)
       savelog(msg.to.id, name.." ["..msg.from.id.."] kicked (chat was locked) ")
       chat_del_user('chat#id'..msg.to.id,'user#id'..msg.from.id,ok_cb,false)
@@ -34,7 +35,7 @@ return {
 }
 
 end
---Copyright; @behroozyaghi
---Persian Translate; @behroozyaghi
---ch : @nod32team
---کپی بدون ذکر منبع حرام است
+--Copyright; @Mhmafi
+--Persian Translate; @Ho3yyyn
+--ch : @Hamyargroupp
+--همیار گروه
