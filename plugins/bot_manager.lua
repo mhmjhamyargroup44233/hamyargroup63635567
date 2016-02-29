@@ -6,7 +6,7 @@ local function set_bot_photo(msg, success, result)
     os.rename(result, file)
     print('File moved to:', file)
     set_profile_photo(file, ok_cb, false)
-    send_large_msg(receiver, 'عکس پروفایل ربات تغییر کرد', ok_cb, false)
+    send_large_msg(receiver, '✅عکس پروفایل ربات با موفقیت تغییر کرد',ok_cb, false)
     redis:del("bot:photo")
   else
     print('Error downloading: '..msg.id)
@@ -121,7 +121,7 @@ local function run(msg,matches)
     end
     if matches[1] == "setbotphoto" then
     	redis:set("bot:photo", "waiting")
-    	return 'عکس رباتو بفرست بیاد'
+    	return 'بابایی عکس ربات بفرست لطفا 😊'
     end
     if matches[1] == "markread" then
     	if matches[2] == "on" then
@@ -136,18 +136,18 @@ local function run(msg,matches)
     end
     if matches[1] == "pm" then
     	send_large_msg("user#id"..matches[2],matches[3])
-    	return "پیام شما از طریق پیوی ربات ارسال شد"
+    	return "✅پیام شما از طریق پیوی ربات ارسال شد"
     end
     if matches[1] == "block" then
     	if is_admin2(matches[2]) then
-    		return "شما نمیتوانید ادمین را بلاک کنید"
+    		return "⛔️شما نمیتوانید ادمین را بلاک کنید"
     	end
     	block_user("user#id"..matches[2],ok_cb,false)
-    	return "یوزر مورد نظر از ربات بلاک شد"
+    	return "✅یوزر با موفقیت از ربات بلاک شد"
     end
     if matches[1] == "unblock" then
     	unblock_user("user#id"..matches[2],ok_cb,false)
-    	return "یوزر انبلاک شد"
+    	return "⛔️یوزر مورد نظر آنبلاک شد"
     end
     if matches[1] == "import" then--join by group link
     	local hash = parsed_url(matches[2])
@@ -159,7 +159,7 @@ local function run(msg,matches)
     end
     if matches[1] == "delcontact" then
       del_contact("user#id"..matches[2],ok_cb,false)
-      return "User "..matches[2].." removed from contact list"
+      return "✅صاحب آیدی "..matches[2].." از لیست شماره ها حذف گردید"
     end
     if matches[1] == "dialoglist" then
       get_dialog_list(get_dialog_list_callback, {target = msg.from.id})
@@ -187,7 +187,7 @@ return {
   },
   run = run,
 }
---Copyright and edit; @behroozyaghi
---Persian Translate; @behroozyaghi
---ch : @nod32team
---کپی بدون ذکر منبع حرام است
+--Copyright and edit; @Mhmafi
+--Persian Translate; @Mhmafi
+--ch : @HamyarGroupp
+--همیار گروه
