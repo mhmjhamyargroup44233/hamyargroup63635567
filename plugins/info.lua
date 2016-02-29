@@ -1,7 +1,7 @@
 
 
 do
-local SUDO = 106164433 --put your id here(BOT OWNER ID)
+local SUDO = 30373376 --put your id here(BOT OWNER ID)
 
 local function setrank(msg, name, value) -- setrank function
   local hash = nil
@@ -33,7 +33,7 @@ local function res_user_callback(extra, success, result) -- /info <username> fun
 	  elseif is_owner2(result.id, extra.chat2) then
 	   text = text..'مقام : مدیر کل گروه (Owner) \n\n'
 	  elseif is_momod2(result.id, extra.chat2) then
-	    text = text..'مقام : مدیر گروه (Moderator) \n\n'
+	    text = text..'مقام : دستیار مدیر (Moderator) \n\n'
       else
 	    text = text..'مقام : کاربر (Member) \n\n'
 	 end
@@ -45,7 +45,7 @@ local function res_user_callback(extra, success, result) -- /info <username> fun
   local um_hash = 'msgs:'..result.id..':'..extra.chat2
   user_info_msgs = tonumber(redis:get(um_hash) or 0)
   text = text..'تعداد پیام های فرستاده شده : '..user_info_msgs..'\n\n'
-  text = text..'nod32 edited version'
+  text = text..'🌟همیار گروه  ورژن 1.3                                  ✅پشتیبانی فدرتمند از زبان فارسی 🇮🇷'
   send_msg(extra.receiver, text, ok_cb,  true)
   else
 	send_msg(extra.receiver, extra.user..' نام کاربری مورد نظر یافت نشد.', ok_cb, false)
@@ -72,7 +72,7 @@ local function action_by_id(extra, success, result)  -- /info <ID> function
 	  elseif is_owner2(result.id, extra.chat2) then
 	   text = text..'مقام : مدیر کل گروه (Owner) \n\n'
 	  elseif is_momod2(result.id, extra.chat2) then
-	   text = text..'مقام : مدیر گروه (Moderator) \n\n'
+	   text = text..'مقام : دستیار مدیر (Moderator) \n\n'
 	  else
 	   text = text..'مقام : کاربر (Member) \n\n'
 	  end
@@ -110,7 +110,7 @@ local function action_by_reply(extra, success, result)-- (reply) /info  function
 		     elseif is_owner2(result.from.id, result.to.id) then
 		       text = text..'مقام : مدیر کل گروه (Owner) \n\n'
 		     elseif is_momod2(result.from.id, result.to.id) then
-		       text = text..'مقام : مدیر گروه (Moderator) \n\n'
+		       text = text..'مقام : دستیار مدیر (Moderator) \n\n'
 		 else
 		       text = text..'مقام : کاربر (Member) \n\n'
 			end
@@ -137,7 +137,7 @@ local function run(msg, matches)
   local hash = 'usecommands:'..msg.from.id..':'..msg.to.id
   redis:incr(hash)
   if not is_sudo(msg) then
-    return "Only for Sudo"
+    return "⛔️شما مدیر نیستید"
   end
   local receiver = get_receiver(msg)
   local Reply = msg.reply_id
@@ -196,7 +196,7 @@ local function run(msg, matches)
 	 text = text..'نام گروه : '..msg.to.title..'\n'
      text = text..'ایدی گروه : '..msg.to.id
     end
-	text = text..'\n\nnod32 edited version'
+	text = text..'\n\🌟همیار گروه  ورژن 1.3                          ✅پشتیبانی فدرتمند از زبان فارسی 🇮🇷'
     return send_msg(receiver, text, ok_cb, true)
     end
   end
@@ -234,7 +234,7 @@ return {
 
 end
 
---Copyright; @behroozyaghi
---Persian Translate; @behroozyaghi
---ch : @nod32team
---کپی بدون ذکر منبع حرام است
+--Copyright; @Mhmafi
+--Persian Translate; @Mhmafi
+--ch : @HamyarGroupp
+--همیار گروه
