@@ -6,7 +6,7 @@ local function mathjs(exp)
   local b,c = http.request(url)
   local text = nil
   if c == 200 then
-    text = 'نتیجه: '..b
+    text = 'جواب ماشین حساب: '..b
   
   elseif c == 400 then
     text = b
@@ -30,7 +30,7 @@ return {
   run = run
 }
 
---Copyright and edit; @behroozyaghi
---Persian Translate; @behroozyaghi
---ch : @nod32team
---کپی بدون ذکر منبع حرام است
+--Copyright and edit; @Mhmafi
+--Persian Translate; @Mhmafi
+--ch : @HamyarGroupp
+--همیار گروه
