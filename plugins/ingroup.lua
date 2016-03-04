@@ -220,7 +220,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-     local text = "⚙تنظیمات گروه:🔧قفل لینک گروه : "..settings.lock_join.."⚙قفل فحاشی : "..settings.antifosh.."\n🔧قفل چت : "..settings.lock_chat.."\n⚙قفل تبلیغات : "..settings.antiads.."\n🔧قفل نام گروه : "..settings.lock_name.."\n⚙قفل عکس گروه : "..settings.lock_photo.."\n🔧قفل عضوگیری گروه : "..settings.lock_member.."\n⚙قفل خارج شدن از گروه : "..leave_ban.."\n🔧تعداد اسپم قفل شده : "..NUM_MSG_MAX.."\n⚙قفل ورود ربات : "..bots_protection.."                                        🌟همیار گروه  ورژن 1.3                                        ✅پشتیبانی فدرتمند از زبان فارسی 🇮🇷 
+  local text = "⚙تنظیمات گروه:🔧قفل لینک گروه : "..settings.lock_join.."⚙قفل فحاشی : "..settings.antifosh.."\n🔧قفل چت : "..settings.lock_chat.."\n⚙قفل تبلیغات : "..settings.antiads.."\n🔧قفل نام گروه : "..settings.lock_name.."\n⚙قفل عکس گروه : "..settings.lock_photo.."\n🔧قفل عضوگیری گروه : "..settings.lock_member.."\n⚙قفل خارج شدن از گروه : "..leave_ban.."\n🔧تعداد اسپم قفل شده : "..NUM_MSG_MAX.."\n⚙قفل ورود ربات : "..bots_protection.."                                        🌟همیار گروه  ورژن 1.3                                        ✅پشتیبانی فدرتمند از زبان فارسی 🇮🇷 
   return text
 end
 
